@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+body{
+    background: url('../images/bg-desktop.svg') hsl(257, 40%, 49%);    
+}
+
+#main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration-mockups{
+    width: 50%;
+}
+
+.illustration-mockups img{
+    margin: 100px 0 0 0;
+    width: 80%;
+}
+
+.caption{
+    width: 33.3333%;
+}
+
+.caption h1{
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+.caption p{
+    color: #fff;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.caption button{
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 0 rgba(0,0,0,0.6);
+    color: hsl(257, 40%, 49%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.caption button:hover{
+    color: #fff;
+    background-color:  hsl(300, 69%, 71%);
+}
+
+
+
+/*********************** Media queries *********************************/
+@media only screen and (max-width: 375px){
+    #main-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caption{
+        width: 50%;
+        margin: 60px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caption button{
+        width: 100%;
+    }
+}
+
+
